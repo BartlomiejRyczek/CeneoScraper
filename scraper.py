@@ -17,7 +17,7 @@ def extract_tag(ancestor, selector=None, attribute=None, return_list=False):
 selectors={
         "opinion_id":[None, "data-entry-id"],
         "author":["span.user-post__author-name"],
-        "recomendation":["span.user-post__author-recomendation > em"],
+        "recommendation":["span.user-post__author-recomendation > em"],
         "rating":["span.user-post__score-count"],
         "verified":["div.review-pz"],
         "post_date":["span.user-post__published>time:nth-child(1)","datetime"],
@@ -28,7 +28,6 @@ selectors={
         "cons":["div.review-feature__title—-negatives~div.review-feature__item", None, True],
         "pros":["div.review-feature__title—-positives~div.review-feature__item", None, True],
     }
-
 #product_code = input("Podaj kod produktu: ")
 product_code = "96693065" #87884295 96693065
 url = f"https://www.ceneo.pl/{product_code}#tab=reviews"
